@@ -1,0 +1,66 @@
+serveur,liste_coup,numset
+GAUZY,Lateral_Droit_D2 C_C_c_0 P_D_c_1 A_C_c_2 Perdu,1
+GAUZY,Lateral_Gauche_M2 C_D_c_0 P_D_c_1 P_D_c_2 A_D_c_3 A_D_c_4 Perdu,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 P_D_c_1 A_C_c_2 Perdu,1
+GAUZY,Lateral_Droit_G2 C_C_c_0 A_D_c_1 Gagne,1
+JARVIS,Lateral_Gauche_M1 C_D_c_0 P_D_c_1 P_D_c_2 A_D_c_3 Perdu,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 Perdu,1
+GAUZY,Lateral_Gauche_G3 C_C_c_0 A_D_c_1 A_D_c_2 C_D_c_3 A_D_c_4 C_D_c_5 A_D_c_6 C_D_c_7 A_D_c_8 C_D_c_9 A_D_c_10 C_D_c_11 A_D_c_12 C_D_c_13 A_D_c_14 C_D_c_15 A_D_c_16 A_D_c_17 Gagne,1
+JARVIS,Lateral_Gauche_M1 C_D_c_0 P_D_c_1 A_D_c_2 C_C_c_3 A_C_c_4 C_C_c_5 A_D_c_6 Perdu,1
+GAUZY,Lateral_Droit_M2 C_D_c_0 A_D_c_1 A_D_c_2 Gagne,1
+JARVIS,Lateral_Gauche_G3 C_C_c_0 Perdu,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 P_C_c_1 A_D_c_2 Perdu,1
+JARVIS,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 C_C_c_3 A_D_c_4 Perdu,1
+JARVIS,Lateral_Gauche_G3 C_C_c_0 A_C_c_1 Gagne,1
+JARVIS,Lateral_Gauche_M1 C_D_c_0 P_D_c_1 A_D_c_2 A_D_c_3 Perdu,1
+GAUZY,Lateral_Droit_M2 C_D_c_0 A_D_c_1 A_D_c_2 Gagne,1
+JARVIS,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 C_C_c_3 A_C_c_4 C_C_c_5 A_D_c_6 Perdu,1
+GAUZY,Lateral_Gauche_M2 C_D_c_0 P_D_c_1 P_D_c_2 A_D_c_3 A_D_c_4 Perdu,1
+JARVIS,Lateral_Gauche_G3 C_C_c_0 Perdu,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 P_C_c_1 A_D_c_2 Perdu,1
+JARVIS,Lateral_Gauche_M2 C_D_c_0 A_D_c_1 Gagne,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 P_C_c_1 P_D_c_2 A_D_c_3 A_D_c_4 Gagne,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 P_D_c_1 A_C_c_2 Perdu,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 P_C_c_1 A_D_c_2 Perdu,1
+JARVIS,Lateral_Gauche_M2 C_D_c_0 A_D_c_1 A_C_c_2 Perdu,1
+GAUZY,Lateral_Droit_G2 C_C_c_0 A_D_c_1 Gagne,1
+JARVIS,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 Perdu,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 Perdu,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 Perdu,1
+JARVIS,Lateral_Gauche_G3 C_C_c_0 Perdu,1
+GAUZY,Lateral_Gauche_M2 C_D_c_0 P_D_c_1 P_D_c_2 A_D_c_3 C_C_c_4 A_C_c_5 C_C_c_6 A_C_c_7 Gagne,1
+JARVIS,Lateral_Gauche_M2 C_D_c_0 A_D_c_1 A_C_c_2 Perdu,1
+JARVIS,Lateral_Gauche_M2 C_D_c_0 A_D_c_1 A_C_c_2 Perdu,1
+GAUZY,Lateral_Gauche_M2 C_D_c_0 P_D_c_1 P_D_c_2 A_D_c_3 A_D_c_4 Perdu,1
+JARVIS,Lateral_Gauche_M1 C_D_c_0 P_D_c_1 A_D_c_2 A_D_c_3 Perdu,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 P_C_c_1 A_D_c_2 Perdu,1
+JARVIS,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 C_C_c_3 A_C_c_4 C_C_c_5 A_D_c_6 Perdu,1
+JARVIS,Lateral_Gauche_M2 C_D_c_0 A_D_c_1 Gagne,1
+JARVIS,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 A_D_c_3 Gagne,1
+JARVIS,Lateral_Gauche_G3 C_C_c_0 A_C_c_1 Gagne,1
+JARVIS,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 C_C_c_3 A_D_c_4 Perdu,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 Perdu,1
+GAUZY,Lateral_Gauche_G3 C_C_c_0 A_D_c_1 A_D_c_2 C_D_c_3 A_D_c_4 C_D_c_5 A_D_c_6 A_C_c_7 A_D_c_8 Perdu,1
+JARVIS,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 Perdu,1
+GAUZY,Lateral_Droit_M2 C_D_c_0 A_D_c_1 A_D_c_2 Perdu,1
+JARVIS,Lateral_Gauche_G3 C_C_c_0 Perdu,1
+GAUZY,Lateral_Gauche_M2 C_D_c_0 P_D_c_1 P_D_c_2 A_D_c_3 A_D_c_4 Perdu,1
+GAUZY,Lateral_Gauche_G3 C_C_c_0 A_D_c_1 A_D_c_2 C_D_c_3 A_D_c_4 A_C_c_5 A_D_c_6 Perdu,1
+JARVIS,Lateral_Gauche_M2 C_D_c_0 A_D_c_1 Gagne,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 Perdu,1
+JARVIS,Lateral_Gauche_M1 C_D_c_0 P_D_c_1 P_D_c_2 A_D_c_3 Perdu,1
+JARVIS,Lateral_Gauche_M1 C_D_c_0 P_D_c_1 P_D_c_2 A_D_c_3 Perdu,1
+JARVIS,Lateral_Gauche_G3 C_C_c_0 Perdu,1
+JARVIS,Lateral_Gauche_G3 C_C_c_0 A_C_c_1 Gagne,1
+GAUZY,Lateral_Droit_G2 C_C_c_0 Perdu,1
+JARVIS,Lateral_Gauche_D2 C_C_c_0 P_D_c_1 Gagne,1
+GAUZY,Lateral_Gauche_G3 C_C_c_0 A_D_c_1 A_D_c_2 C_D_c_3 A_D_c_4 A_C_c_5 C_C_c_6 A_D_c_7 Gagne,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 P_C_c_1 A_D_c_2 Perdu,1
+JARVIS,Lateral_Gauche_G3 C_C_c_0 A_C_c_1 Gagne,1
+GAUZY,Lateral_Droit_D2 C_C_c_0 P_D_c_1 A_C_c_2 Perdu,1
+JARVIS,Lateral_Gauche_M2 C_D_c_0 A_D_c_1 Gagne,1
+GAUZY,Lateral_Droit_M2 C_D_c_0 A_D_c_1 A_D_c_2 Gagne,1
+JARVIS,Lateral_Gauche_M2 C_D_c_0 A_D_c_1 Gagne,1
+GAUZY,Lateral_Droit_G2 C_C_c_0 Perdu,1
+JARVIS,Lateral_Gauche_G3 C_C_c_0 Perdu,1
+GAUZY,Lateral_Droit_G2 C_C_c_0 Perdu,1

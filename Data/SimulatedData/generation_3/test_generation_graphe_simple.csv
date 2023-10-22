@@ -1,0 +1,62 @@
+serveur,liste_coup,numset
+DRINKHALL_PAUL,Lateral_Droit_M1 C_D_c_0 P_D_c_1 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_M2 C_D_c_0 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_M2 C_D_c_0 P_D_c_1 A_D_c_2 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_D1 C_C_c_0 P_D_c_1 P_D_c_2 A_D_c_3 A_C_c_4 A_C_c_5 A_C_c_6 Perdu,1
+LEBRUN_FELIX,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_C_c_1 A_D_c_2 Perdu,1
+LEBRUN_FELIX,Lateral_Droit_G2 C_C_c_0 A_C_c_1 A_D_c_2 A_D_c_3 A_C_c_4 A_C_c_5 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_M2 C_D_c_0 P_D_c_1 A_D_c_2 Perdu,1
+LEBRUN_FELIX,Lateral_Droit_M1 C_D_c_0 P_D_c_1 A_D_c_2 A_C_c_3 A_D_c_4 C_D_c_5 C_D_c_6 A_D_c_7 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_M1 C_D_c_0 P_D_c_1 A_D_c_2 A_C_c_3 A_C_c_4 A_C_c_5 Gagne,1
+LEBRUN_FELIX,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 C_D_c_3 A_D_c_4 A_D_c_5 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_G3 C_C_c_0 A_D_c_1 Gagne,1
+LEBRUN_FELIX,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 A_C_c_3 A_D_c_4 A_D_c_5 A_C_c_6 A_C_c_7 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_M2 C_D_c_0 Perdu,1
+LEBRUN_FELIX,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_M2 C_D_c_0 P_D_c_1 A_D_c_2 Perdu,1
+LEBRUN_FELIX,Lateral_Droit_D1 C_C_c_0 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 A_D_c_2 A_C_c_3 A_C_c_4 Perdu,1
+LEBRUN_FELIX,Lateral_Droit_D1 C_C_c_0 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 A_D_c_2 A_C_c_3 A_C_c_4 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_M2 C_D_c_0 P_D_c_1 A_D_c_2 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_M1 C_D_c_0 P_D_c_1 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 C_D_c_2 C_D_c_3 A_D_c_4 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_D1 C_C_c_0 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_M2 C_D_c_0 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 C_D_c_2 Perdu,1
+LEBRUN_FELIX,Lateral_Droit_M1 C_D_c_0 P_D_c_1 A_D_c_2 A_C_c_3 A_C_c_4 A_C_c_5 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 C_D_c_2 Perdu,1
+LEBRUN_FELIX,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 Perdu,1
+LEBRUN_FELIX,Lateral_Droit_G2 C_C_c_0 A_D_c_1 A_D_c_2 C_D_c_3 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_C_c_1 A_D_c_2 Perdu,1
+LEBRUN_FELIX,Lateral_Droit_G3 C_C_c_0 A_D_c_1 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 A_D_c_2 A_C_c_3 A_C_c_4 Perdu,1
+LEBRUN_FELIX,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 Perdu,1
+LEBRUN_FELIX,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 A_C_c_3 A_D_c_4 A_D_c_5 A_D_c_6 C_D_c_7 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_D1 C_C_c_0 Perdu,1
+LEBRUN_FELIX,Lateral_Droit_D1 C_C_c_0 Perdu,1
+LEBRUN_FELIX,Lateral_Droit_M1 C_D_c_0 P_D_c_1 A_D_c_2 A_C_c_3 A_C_c_4 A_C_c_5 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_G3 C_C_c_0 A_D_c_1 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_C_c_1 C_D_c_2 C_D_c_3 A_D_c_4 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_G2 C_C_c_0 A_D_c_1 A_D_c_2 C_C_c_3 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_C_c_1 C_D_c_2 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_M2 C_D_c_0 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_M1 C_D_c_0 P_D_c_1 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_G3 C_C_c_0 A_D_c_1 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_G2 C_C_c_0 A_D_c_1 A_D_c_2 A_D_c_3 Gagne,1
+LEBRUN_FELIX,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 C_D_c_3 A_D_c_4 A_D_c_5 A_C_c_6 A_C_c_7 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_D1 C_C_c_0 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_M1 C_D_c_0 P_D_c_1 A_D_c_2 A_C_c_3 A_C_c_4 C_D_c_5 A_D_c_6 C_D_c_7 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_D1 C_C_c_0 P_D_c_1 P_D_c_2 A_D_c_3 C_D_c_4 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 A_D_c_2 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 A_D_c_2 A_C_c_3 A_C_c_4 Perdu,1
+LEBRUN_FELIX,Lateral_Droit_G2 C_C_c_0 A_D_c_1 A_D_c_2 C_D_c_3 Gagne,1
+DRINKHALL_PAUL,Lateral_Droit_M2 C_D_c_0 Perdu,1
+LEBRUN_FELIX,Lateral_Gauche_D2 C_C_c_0 A_D_c_1 A_D_c_2 A_C_c_3 A_D_c_4 A_D_c_5 A_C_c_6 A_C_c_7 Gagne,1
+LEBRUN_FELIX,Lateral_Droit_G2 C_C_c_0 A_D_c_1 A_D_c_2 C_D_c_3 C_D_c_4 A_D_c_5 Perdu,1
+DRINKHALL_PAUL,Lateral_Droit_G3 C_C_c_0 A_D_c_1 C_D_c_2 C_D_c_3 A_D_c_4 Gagne,1
