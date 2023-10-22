@@ -28,5 +28,3 @@ The **expected score** is a statistical metric to estimate the probability of wi
 
 The **creativity** is defined as the variety of shots and techniques employed by a player during a match, including variations in racket side, placement, and shot selection.
 > **Note :** To compute the distance between two openings, we look at the depth of their common ancestor in the **Playing Pattern Tree**. 
-
-
