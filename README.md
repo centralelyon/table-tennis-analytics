@@ -1,9 +1,10 @@
-# table-tennis-analytics
+# Table tennis analytics
 
-**TT-analytics** proposes new metrics to further analyze **table tennis matches**.  Our approach involves adapting existing metrics by incorporating additional attributes provided by the **detailed data**, such as player zones and shot angles. Furthermore, we present a methodology for **visualizing all metrics simultaneously** during a single set, enabling a comprehensive assessment of their significance.
+We propose new metrics to further analyze **table tennis matches**.  Our approach involves adapting existing metrics by incorporating additional attributes provided by the **detailed data**, such as player zones and shot angles. Furthermore, we present a methodology for **visualizing all metrics simultaneously** during a single set, enabling a comprehensive assessment of their significance.
 
-This repository is linked to a publication presented at the **MLSA 2023**.
-You can reproduce the figures of the publication by executing :
+This repository is linked to a publication presented at the _10th Workshop on Machine Learning and Data Mining for Sports Analytics_
+ **[MLSA 2023](https://dtai.cs.kuleuven.be/events/MLSA23/)**. You can read the pdf version of the publication **[here](https://hal.science/hal-04240982)**. And reproduce the figures of the publication by executing :
+
 ```bash
 # Clone the repository
 $ git clone https://github.com/centralelyon/table-tennis-analytics.git
@@ -11,6 +12,26 @@ $ cd Metrics/Lebrun_Zhendong/
 # Run the file MatchAnalysis.py
 $ python3 MatchAnalysis.py
 ```
+
+## How to cite
+
+If you find this work useful, please consider using the follwing citations:
+
+> Gabin Calmet, Aymeric Erades, Romain Vuillemot. Exploring Table Tennis Analytics: Domination, Expected Score and Shot Diversity. Machine Learning and Data Mining for Sports Analytics, Sep 2023, Turin, Italy.
+
+    @inproceedings{calmet:hal-04240982,
+        TITLE = {{Exploring Table Tennis Analytics: Domination, Expected Score and Shot Diversity}},
+        AUTHOR = {Calmet, Gabin and Erades, Aymeric and Vuillemot, Romain},
+        URL = {https://hal.science/hal-04240982},
+        BOOKTITLE = {{Machine Learning and Data Mining for Sports Analytics}},
+        ADDRESS = {Turin, Italy},
+        EDITOR = {Springer Link},
+        SERIES = {Communications in Computer and Information Science},
+        YEAR = {2023},
+        MONTH = Sep
+    }
+
+
 ## Domination
 
 We defined the **domination** as a situation in which a player (or a team) consistently outperforms their opponents and maintains a significant advantage. This function is close to 1 when the first player (or team) dominates, and it is close to -1 if it is the second.
