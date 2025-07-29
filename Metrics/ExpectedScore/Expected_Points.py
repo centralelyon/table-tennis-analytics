@@ -10,16 +10,18 @@ Created on Thu Jun  1 11:48:55 2023
 # determiner le expected score
 
 
-import sys
-sys.path.append('..')
-
-from ExpectedScore import Analyse_Simu as AS
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
+import sys
+sys.path.append('..')
+import Analyse_Simu as AS
+#from ExpectedScore import Analyse_Simu as AS
+
 # match LIANG LEBRUN
 def liang_lebrun():
-    df = pd.read_csv("../../Data/AnnotatedData/WithTracking/2022_macao_china_annotation_all.csv")
+    df = pd.read_csv("Data/AnnotatedData/WithTracking/2022_macao_china_annotation_all.csv")
     return(df,0)
 
 # match LEBRUN DRINKHALL
@@ -75,9 +77,14 @@ def evaluer_match(A, df, ni):
     X_scoresA, X_scoresB, scoresA, scoresB = [0], [0], [0], [0]
     X_scoreA,  X_scoreB,  scoreA, scoreB = 0, 0, 0, 0
     chemin = ['racine']
-    
+    num_set = 1
     for i,row in df.iterrows():
-        
+        if row["set"] != num_set:
+            num_set = num_set = row["set"]
+            X_scoreA,  X_scoreB,  scoreA, scoreB = 0, 0, 0, 0
+            
+
+
         if row.type_service in ['lat_droit','lat_gauche'] :
             type_stroke = row.type_service
             serveur = row.nom
@@ -131,23 +138,28 @@ def evaluer_match(A, df, ni):
     
     coups = list(range(len(df)+1))
     
-    axs[0].plot(coups, scoresA, label = 'scoreA')
-    axs[0].plot(coups, scoresB, label = 'scoreB')
+    axs[0].plot(coups, scoresA, label = 'score Fan Zhendong')
+    axs[0].plot(coups, scoresB, label = 'score Truls Moregardh')
     axs[0].set_xlim([0, len(df)+1])
     axs[0].set_ylim([0, 11])
     axs[0].legend(loc = 'lower right')
     axs[0].set_ylabel('Real Score')
     
-    axs[1].plot(coups, X_scoresA, label = 'X_scoreA')
-    axs[1].plot(coups, X_scoresB, label = 'X_scoreB')
+    axs[1].plot(coups, X_scoresA, label = 'X_score Fan Zhendong')
+    axs[1].plot(coups, X_scoresB, label = 'X_score Truls Moregardh')
     axs[1].set_xlim([0, len(df)+1])
     axs[1].legend(loc = 'lower right')
     axs[1].set_ylabel('Expected Score')
     axs[1].set_xlabel('Strokes')
 
+    plt.show()
+
 
 if __name__ == '__main__':
     A = AS.Arbre()
-    AS.give_match(A)
-    df,ni = liang_lebrun()
+    #AS.give_match(A)
+    #df,ni = liang_lebrun()
+    df = pd.read_csv("Data/AnnotatedData/WithTracking/FAN-ZHENDONG_vs_TRULS-MOREGARD_annotation_metrics.csv")
+    ni = 0
+
     evaluer_match(A, df, ni)

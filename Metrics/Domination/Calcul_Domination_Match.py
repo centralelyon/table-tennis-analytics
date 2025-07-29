@@ -476,46 +476,125 @@ def display_all_domination(df, ni):
     
     fig.supxlabel("Number of strokes")    
     
-def display_domination(df, ni):
+def display_domination(df, ni, afficher=True):
     N = df.shape[0]
-    calcul_scores(df)
-    diffsA, Fatig, Aggre, Angle = np.array(calcul_diff_position(df))
-    Stress = np.array(calcul_stress(df))
+    calcul_scores(df,ni)
+    name_A = df['joueurA'][ni]
+    name_B = df['joueurB'][ni]
+    print(name_A,name_B)
+
+    diffsA,diffA = calcul_diff_position(df,name_A,name_B)
+    Stress,last_stress = calcul_stress(df, ni, name_A, name_B)
     
-    fig, axs = plt.subplots(2, figsize=(8,12))
-    fig.suptitle('Evolution de la domination sur un set')
-    
-    coups = np.arange(0,N,1)
+    coups = np.arange(0, N, 1)
     avantage_scoreA = np.array(df['proba_gagne'])
-    avantage_scoreB = - avantage_scoreA
-    
+    avantage_scoreB = -avantage_scoreA
+    diffsA = np.array(diffsA)
+    Stress = np.array(Stress)
+
+    # Lissage spline
     avantage_score_A_smooth = splrep(coups, avantage_scoreA, s=1)
     avantage_score_B_smooth = splrep(coups, avantage_scoreB, s=1)
-    
     avantage_physique_A_smooth = splrep(coups, diffsA, s=1)
     avantage_physique_B_smooth = splrep(coups, -diffsA, s=1)
-    
     avantage_stress_A_smooth = splrep(coups, Stress, s=1)
     avantage_stress_B_smooth = splrep(coups, -Stress, s=1)
+
+    print(max(0.4*BSpline(*avantage_score_A_smooth)(coups) +
+                0.3*BSpline(*avantage_physique_A_smooth)(coups) +
+                0.3*BSpline(*avantage_stress_A_smooth)(coups)))
+    print(max(0.4*BSpline(*avantage_score_B_smooth)(coups) +
+                0.3*BSpline(*avantage_physique_B_smooth)(coups) +
+                0.3*BSpline(*avantage_stress_B_smooth)(coups)))
     
     
-    axs[0].plot(coups, df['scoreA'], label = df['joueurA'][ni])
-    axs[0].plot(coups, df['scoreB'], label = df['joueurB'][ni])
-    axs[0].legend(loc="lower right")
-    axs[0].set_xlim([0, N])
-    axs[0].set_ylabel('Score', rotation=0, labelpad=50)
-    axs[0].yaxis.set_label_coords(-0.075, 0.5)
     
-    
-    axs[1].plot(coups,0.4*BSpline(*avantage_score_A_smooth)(coups)+0.3*BSpline(*avantage_physique_A_smooth)(coups)+0.3*BSpline(*avantage_stress_A_smooth)(coups))
-    axs[1].plot(coups,0.4*BSpline(*avantage_score_B_smooth)(coups)+0.3*BSpline(*avantage_physique_B_smooth)(coups)+0.3*BSpline(*avantage_stress_B_smooth)(coups))
-    axs[1].set_ylim([-1, 1])
-    axs[1].set_xlim([0, N])
-    axs[1].set_ylabel('Domination', rotation=0, labelpad=50)
-    axs[1].yaxis.set_label_coords(-0.15, 0.5)
-    
-    fig.supxlabel("Number of strokes")    
-    
+    if afficher:
+        # 5 figures : score brut, domination totale, + 3 nouvelles (score / physique / stress)
+        fig, axs = plt.subplots(5, figsize=(10, 20))
+        fig.suptitle('Évolution de la domination sur un set')
+
+        # 1. Score réel
+        axs[0].plot(coups, df['scoreA'], label=name_A)
+        axs[0].plot(coups, df['scoreB'], label=name_B)
+        axs[0].legend(loc="lower right")
+        axs[0].set_xlim([0, N])
+        axs[0].set_ylabel('Score', rotation=0, labelpad=50)
+        axs[0].yaxis.set_label_coords(-0.075, 0.5)
+
+        # 2. Domination globale
+        axs[1].plot(coups, 0.4*BSpline(*avantage_score_A_smooth)(coups) +
+                    0.3*BSpline(*avantage_physique_A_smooth)(coups) +
+                    0.3*BSpline(*avantage_stress_A_smooth)(coups), label=name_A)
+        axs[1].plot(coups, 0.4*BSpline(*avantage_score_B_smooth)(coups) +
+                    0.3*BSpline(*avantage_physique_B_smooth)(coups) +
+                    0.3*BSpline(*avantage_stress_B_smooth)(coups), label=name_B)
+        axs[1].set_ylim([-1, 1])
+        axs[1].set_xlim([0, N])
+        axs[1].set_ylabel('Domination', rotation=0, labelpad=50)
+        axs[1].yaxis.set_label_coords(-0.15, 0.5)
+        axs[1].legend(loc="upper right")
+
+        # 3. Avantage score
+        axs[2].plot(coups, BSpline(*avantage_score_A_smooth)(coups), label=f'Score: {name_A}')
+        axs[2].plot(coups, BSpline(*avantage_score_B_smooth)(coups), label=f'Score: {name_B}')
+        axs[2].set_ylim([-1, 1])
+        axs[2].set_xlim([0, N])
+        axs[2].set_ylabel('Score')
+        axs[2].legend(loc="upper right")
+
+        # 4. Avantage physique
+        axs[3].plot(coups, BSpline(*avantage_physique_A_smooth)(coups), label=f'Physique: {name_A}')
+        axs[3].plot(coups, BSpline(*avantage_physique_B_smooth)(coups), label=f'Physique: {name_B}')
+        axs[3].set_ylim([-1, 1])
+        axs[3].set_xlim([0, N])
+        axs[3].set_ylabel('Physique')
+        axs[3].legend(loc="upper right")
+
+        # 5. Avantage stress
+        axs[4].plot(coups, BSpline(*avantage_stress_A_smooth)(coups), label=f'Stress: {name_A}')
+        axs[4].plot(coups, BSpline(*avantage_stress_B_smooth)(coups), label=f'Stress: {name_B}')
+        axs[4].set_ylim([-1, 1])
+        axs[4].set_xlim([0, N])
+        axs[4].set_ylabel('Stress')
+        axs[4].legend(loc="upper right")
+
+        # Positions où placer les barres
+        barres_rouges = [86, 189, 314, 419]
+
+        # Dans chaque subplot, ajouter les lignes verticales rouges
+        for ax in axs:
+            for x in barres_rouges:
+                ax.axvline(x, color='red', linestyle='--', linewidth=1)
+            ax.axhline(0.5, color='gray', linestyle=':', linewidth=1)
+
+
+        fig.supxlabel("Nombre de coups")
+        fig.subplots_adjust(hspace=2)  # ← ajuste l'espacement vertical entre les subplots
+
+        plt.tight_layout(rect=[0, 0.03, 1, 0.95])  # pour ne pas chevaucher le titre
+        plt.show()
+
+    return(0.4*BSpline(*avantage_score_A_smooth)(coups) +
+                0.3*BSpline(*avantage_physique_A_smooth)(coups) +
+                0.3*BSpline(*avantage_stress_A_smooth)(coups),
+                
+                0.4*BSpline(*avantage_score_B_smooth)(coups) +
+                0.3*BSpline(*avantage_physique_B_smooth)(coups) +
+                0.3*BSpline(*avantage_stress_B_smooth)(coups))
+
+def calcul_points_dans_domination(csv_annotation,seuil_max,seuil_min,liste_domination):
+    """
+        Fonction permettant de récupérer la liste des points qui sont dans le seuil de domination
+    """
+    df = pd.read_csv(csv_annotation)
+
+    df['dom'] = liste_domination
+    df_filtre = df[(df['dom'] >= seuil_min) & (df['dom'] <= seuil_max)]
+    print(df_filtre)
+    print(df_filtre['num_point'].unique().tolist())
+    return(df_filtre['num_point'].unique().tolist())
+
 # match LIANG LEBRUN
 def liang_lebrun():
     df = pd.read_csv("../../Data/AnnotatedData/WithTracking/2022_macao_china_annotation_all.csv")
@@ -532,4 +611,8 @@ def jarvis_gauzy():
     display_domination(df, 31)
     
 if __name__ == '__main__':
-    liang_lebrun()
+    #df = pd.read_csv("Data/AnnotatedData/WithTracking/2022_macao_china_annotation_all.csv")
+    df = pd.read_csv("Data/AnnotatedData/WithTracking/FAN-ZHENDONG_vs_TRULS-MOREGARD_annotation_metrics.csv")
+    domA,domB = display_domination(df, 0,True)
+    #calcul_points_dans_domination("Data/AnnotatedData/WithTracking/FAN-ZHENDONG_vs_TRULS-MOREGARD_annotation_metrics.csv",
+    #                              0.32,-0.32,domB)
