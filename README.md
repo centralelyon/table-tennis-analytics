@@ -13,6 +13,19 @@ $ cd Metrics/Lebrun_Zhendong/
 $ python3 MatchAnalysis.py
 ```
 
+## Expected score
+Expected score is calculated on the history of rallies and their outcomes. It's inspired on the expected goal in soccer.  
+Use `Metric/ExpectedScore/Expected_Points.py` to compute and display expected score.
+
+<img src="images/expected_score.png" alt="" width="500">  
+
+## Domination
+We created multifactorial dominance based on physical, mental, and factual (with the score) factors.  
+Use `Metric/Domination/Calcul_Domination_Match.py` to compute and display domination.
+
+    <img src="images/domination.png" alt="" width="500">  
+
+
 ## How to cite
 
 If you find this work useful, please consider using the follwing citations:
