@@ -23,7 +23,7 @@ Use `Metric/ExpectedScore/Expected_Points.py` to compute and display expected sc
 We created multifactorial dominance based on physical, mental, and factual (with the score) factors.  
 Use `Metric/Domination/Calcul_Domination_Match.py` to compute and display domination.
 
-    <img src="images/domination.png" alt="" width="500">  
+<img src="images/domination.png" alt="" width="500">  
 
 
 ## How to cite
